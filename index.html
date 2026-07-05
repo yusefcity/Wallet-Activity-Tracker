@@ -150,3 +150,27 @@ document.getElementById("addButton").onclick=function(){
         title:title.value.trim(),
         amount:amount.value
     });
+
+    refreshView();
+
+    title.value="";
+    amount.value="";
+
+};
+
+// Remove every activity
+document.getElementById("removeButton").onclick=function(){
+
+    records.length=0;
+
+    refreshView();
+
+};
+
+// Initial render
+refreshView();
+
+</script>
+
+</body>
+</html>
